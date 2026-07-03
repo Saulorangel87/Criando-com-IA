@@ -1,16 +1,63 @@
-# React + Vite
+# Criando com IA 🤖✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Projeto de landing page desenvolvido com **React + Vite**, criado como estudo e experimentação com ferramentas de Inteligência Artificial.
 
-Currently, two official plugins are available:
+## 📋 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O **Criando com IA** é uma página inicial (landing page) com design moderno e animado, que apresenta uma proposta de valor sobre o uso de IA para criar sites, textos e designs profissionais de forma rápida e sem conhecimento técnico.
 
-## React Compiler
+O projeto nasceu como um arquivo HTML simples e foi evoluindo ao longo dos estudos:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **HTML + CSS + JS** em um único arquivo
+2. Separação em arquivos distintos (`index.html`, `style.css`, `script.js`)
+3. Organização em pastas (`assets/css/`, `assets/js/`)
+4. Migração completa para **React com Vite**
 
-## Expanding the Oxlint configuration
+## 🎨 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Fundo animado com gradientes e orbs flutuantes
+- Card glassmorphism com animação de entrada
+- Título com gradiente colorido
+- Botão de CTA com feedback visual ao clicar
+- Layout totalmente responsivo
+
+## 🚀 Tecnologias utilizadas
+
+- [React](https://react.dev/) — biblioteca para construção de interfaces
+- [Vite](https://vitejs.dev/) — bundler e servidor de desenvolvimento
+- CSS puro com animações e variáveis
+- Google Fonts — família tipográfica [Outfit](https://fonts.google.com/specimen/Outfit)
+
+## 📁 Estrutura do projeto
+
+```
+Criando com IA/
+├── index.html
+├── package.json
+├── vite.config.js
+└── src/
+    ├── main.jsx
+    ├── index.css
+    ├── App.jsx
+    └── components/
+        ├── Background.jsx
+        ├── Background.css
+        ├── HeroCard.jsx
+        └── HeroCard.css
+```
+
+## ▶️ Como rodar localmente
+
+```bash
+# Instalar dependências
+npm install
+
+# Iniciar servidor de desenvolvimento
+npm run dev
+```
+
+Acesse em: [http://localhost:5173](http://localhost:5173)
+
+---
+
+> Projeto criado com fins de aprendizado — **Criando com IA** 🚀
