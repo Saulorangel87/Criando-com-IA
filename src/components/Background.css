@@ -1,0 +1,53 @@
+/* ── Fundo animado ── */
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 70% 55% at 15% 15%, rgba(139, 92, 246, 0.3) 0%, transparent 65%),
+    radial-gradient(ellipse 60% 50% at 85% 80%, rgba(59, 130, 246, 0.25) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 40% at 70% 5%,  rgba(236, 72, 153, 0.18) 0%, transparent 60%);
+  animation: bgPulse 10s ease-in-out infinite alternate;
+}
+
+@keyframes bgPulse {
+  from { filter: hue-rotate(0deg) brightness(1); }
+  to   { filter: hue-rotate(20deg) brightness(1.1); }
+}
+
+/* ── Orbs flutuantes ── */
+.orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.orb--a {
+  width: 420px;
+  height: 420px;
+  background: #8b5cf6;
+  top: -120px;
+  left: -100px;
+  animation: floatA 11s ease-in-out infinite;
+}
+
+.orb--b {
+  width: 320px;
+  height: 320px;
+  background: #3b82f6;
+  bottom: -80px;
+  right: -80px;
+  animation: floatB 13s ease-in-out infinite;
+}
+
+@keyframes floatA {
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(30px, 40px); }
+}
+
+@keyframes floatB {
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(-25px, -35px); }
+}
